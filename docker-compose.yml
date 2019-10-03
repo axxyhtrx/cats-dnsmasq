@@ -5,6 +5,7 @@ services:
         image: axxyhtrx/dnsmasq
         volumes:
             - ./dnsmasq.conf:/etc/dnsmasq.conf
+            - ./xmpp.hosts:/etc/xmpp.hosts
         ports:
             - "53:53/udp"
         cap_add:
